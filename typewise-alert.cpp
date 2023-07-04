@@ -1,11 +1,14 @@
 #include "typewise-alert.h"
 #include <stdio.h>
 
-BreachType inferBreach(double value, double lowerLimit, double upperLimit) {
-  if(value < lowerLimit) {
+BreachType inferBreach(double value, double lowerLimit, double upperLimit)
+{
+  if(value < lowerLimit) 
+  {
     return TOO_LOW;
   }
-  if(value > upperLimit) {
+  if(value > upperLimit) 
+  {
     return TOO_HIGH;
   }
   return NORMAL;
