@@ -30,7 +30,6 @@ BreachType classifyTemperatureBreach( CoolingType coolingType, double temperatur
     default:
       lowerLimit = MED_ACTIVE_COOLING_LOW_LIMIT;
       upperLimit = MED_ACTIVE_COOLING_HIGH_LIMIT;
-      break;
   }
   return inferBreach(temperatureInC, lowerLimit, upperLimit);
 }
